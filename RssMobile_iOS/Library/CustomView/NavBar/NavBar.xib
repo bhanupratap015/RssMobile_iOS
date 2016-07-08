@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="1" contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J41-mO-AFR">
+                    <rect key="frame" x="0.0" y="20" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="BjE-pc-ojY"/>
+                    </constraints>
+                    <state key="normal" image="Menu.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.57810730539999999" blue="0.2228169505" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="J41-mO-AFR" secondAttribute="bottom" id="bjk-dZ-C5K"/>
+                <constraint firstItem="J41-mO-AFR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="pd2-dm-UMo"/>
+                <constraint firstItem="J41-mO-AFR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tkO-IJ-uE1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMenu" destination="J41-mO-AFR" id="Mse-Mt-gMq"/>
+            </connections>
+            <point key="canvasLocation" x="250" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Menu.png" width="35" height="35"/>
+    </resources>
+</document>

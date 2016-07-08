@@ -12,7 +12,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "UISidebarViewController.h"
 
-
+#import "Common.h"
 
 @interface AppDelegate ()
 
